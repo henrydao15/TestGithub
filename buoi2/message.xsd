@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"> //bat buoc
+    <xs:element name="message" type="xs:string"></xs:element>
+</xs:schema> //bat buoc
+
+<message>ahihi<message> -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault = "unqualified">
+    <xs:element name="email">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="to" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+                <xs:element name="from" type="xs:string">
+                <xs:element name="header" type="xs:string">
+                <xs:element name="body" type="xs:string">
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema> 
+

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE employee SYSTEM "listEmployee.dtd">
+<employee>
+    <firstName>Henry</firstName>
+    <lastName>Dao</lastName>
+    <birthDay>10-15-2000</birthDay>
+    <salary>Henry</salary>
+</employee>

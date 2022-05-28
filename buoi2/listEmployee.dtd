@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!-- <!DOCTYPE employee [
+<!ELEMENT employee> (firstName, lastName, birthDay, salary)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT birthDay (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+]> -->
+
+<!-- <employee>
+    <firstName>Henry</firstName>
+    <lastName>Dao</lastName>
+    <birthDay>10-15-2000</birthDay>
+    <salary>Henry</salary>
+</employee> -->
+
+<!DOCTYPE employeeList [
+<!ELEMENT employeeList> (employee++)>
+<!ELEMENT employee> (name, birthDay, address)>
+<!ELEMENT name (firstName, lastName)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT birthDay (#PCDATA)>
+<!ELEMENT address (address1, address2?)>
+<!ELEMENT address1 (#PCDATA)>
+<!ELEMENT address2 (#PCDATA)>
+<!ATTLIST employee eID CDATA #REQUIRED>
+]>
+
+<employeeList>
+    <employee eID="1">
+        <name>
+            <firstName>Henry</firstName>
+            <lastName>Dao</lastName>
+        </name>
+        <birthDay>12345</birthDay>
+        <address>
+            <address1>Hai Duong<address1>
+        </address>
+    </employee>
+
+        <employee eID="2">
+        <name>
+            <firstName>Phuong</firstName>
+            <lastName>Dao</lastName>
+        </name>
+        <birthDay>4321</birthDay>
+        <address>
+            <address1>HN<address1>
+        </address>
+    </employee>
+</employeeList
+

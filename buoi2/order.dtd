@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE order [
+<!ELEMENT order> (date, orderID, name, itemList, totalValue)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT orderID (#PCDATA)>
+<!ELEMENT name (firstName, lastName)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT itemList (item+)>
+<!ELEMENT item (itemID, itemName, quantity, price, value)>
+<!ELEMENT itemID (#PCDATA)>
+<!ELEMENT itemName (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT value (#PCDATA)>
+<!ELEMENT totalValue (#PCDATA)>
+]>
+
+<order>
+    <date>12345</date>
+    <orderID>1<orderID>
+    <name>
+        <firstName>Henry</firstName>
+        <lastName>Dao</lastName>
+    </name>
+    <itemList>
+        <item>
+            <itemID>234</itemID>
+            <itemName>Shoes 1</itemName>
+            <quantity>1</quantity>
+            <price>10</price>
+            <value>10</value>
+        </item>
+    </itemList>
+    <totalValue>10</totalValue>
+</order>
