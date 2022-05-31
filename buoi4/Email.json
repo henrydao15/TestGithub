@@ -1,0 +1,18 @@
+{
+    "email":
+    [
+        {
+            "to" : ["abc@gmail.com", "2@gmail.com"],
+            "from": "xyz@gmail.com",
+            "header": "abc",
+            "body": "ahihi"
+        },
+        {
+            "to" : "1",
+            "from": "2",
+            "header": "3",
+            "body": "4"
+        }
+
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "EmployeeList": [
+      {
+        "employeeID": "1",
+        "name": {
+          "firstName": "Henry",
+          "lastName": "A"
+        },
+        "birthDay": "123",
+        "address": [
+          "Hn",
+          "HP"
+        ]
+      },
+      {
+        "employeeID": "2",
+        "name": {
+          "firstName": "Phuong",
+          "lastName": "Duc"
+        },
+        "birthDay": "123",
+        "address": "Sai Gon"
+      }
+    ]
+  } 
